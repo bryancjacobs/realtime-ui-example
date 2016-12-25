@@ -1,0 +1,14 @@
+{
+  "name": "websocket-example",
+  "version": "1.0.0",
+  "description": "nodejs, kafka, and index.html integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^1.1.1"
+  }
+}
