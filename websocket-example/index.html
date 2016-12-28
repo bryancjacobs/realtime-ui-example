@@ -10,8 +10,8 @@
       }
     </style>
     <script>
-      function updateStats(memuse) {
-        document.getElementById('rss').innerHTML = memuse.message;
+      function updateStats(data) {
+        document.getElementById('rss').innerHTML = data.message;
       }
       var ws = new WebSocket('ws://localhost:8080');
       ws.onmessage = function (event) {
@@ -20,10 +20,9 @@
     </script>
   </head>
   <body>
-    <strong>Server Stats</strong><br>
-    RSS: <div id='rss'></div><br>
-    Heap total: <div id='heapTotal'></div><br>
-    Heap used: <div id='heapUsed'></div><br>
+    <strong>Notifications</strong><br>
+    Incoming Message: <div id='rss'></div><br>
+
   </body>
 </html>
 
